@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Metode Pembayaran</title>
+    <title>Metode Pembayaran Asepszip</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
@@ -123,7 +123,7 @@
                            <h2 class="text-xl sm:text-2xl font-semibold text-sky-400">Dana</h2>
                            <span class="status-badge status-aktif">Aktif</span>
                         </div>
-                        <p id="dana-number" class="text-slate-300 text-lg sm:text-xl mt-1">0895324070395</p>
+                        <p id="dana-number" class="text-slate-300 text-lg sm:text-xl mt-1">081278983490</p>
                     </div>
                     <button onclick="copyToClipboard('dana-number', 'Dana')" class="copy-button mt-3 sm:mt-0 bg-sky-500 hover:bg-sky-600 text-white font-medium py-2 px-4 rounded-lg text-sm flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard mr-2" viewBox="0 0 16 16"><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/></svg>
@@ -140,7 +140,7 @@
                             <h2 class="text-xl sm:text-2xl font-semibold text-emerald-400">Gopay</h2>
                             <span class="status-badge status-aktif">Aktif</span>
                         </div>
-                        <p id="gopay-number" class="text-slate-300 text-lg sm:text-xl mt-1">0895324070395</p>
+                        <p id="gopay-number" class="text-slate-300 text-lg sm:text-xl mt-1">081278983490</p>
                     </div>
                     <button onclick="copyToClipboard('gopay-number', 'Gopay')" class="copy-button mt-3 sm:mt-0 bg-emerald-500 hover:bg-emerald-600 text-white font-medium py-2 px-4 rounded-lg text-sm flex items-center">
                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clipboard mr-2" viewBox="0 0 16 16"><path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/><path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/></svg>
@@ -173,7 +173,7 @@
                         <h2 class="text-xl sm:text-2xl font-semibold text-lime-400">QRIS</h2>
                         <span class="status-badge status-aktif">Aktif</span>
                     </div>
-                    <img id="qris-image-display" src="https://files.catbox.moe/jcp8hv.jpg" alt="[Image of Kode QRIS Pembayaran]" class="qris-image" onerror="this.onerror=null;this.src='https://placehold.co/200x200/1e293b/e0e0e0?text=QRIS+Tidak+Tersedia'; this.alt='[Image of Gagal memuat QRIS]';">
+                    <img id="qris-image-display" src="https://files.catbox.moe/6yean2.png" alt="[Image of Kode QRIS Pembayaran]" class="qris-image" onerror="this.onerror=null;this.src='https://placehold.co/200x200/1e293b/e0e0e0?text=QRIS+Tidak+Tersedia'; this.alt='[Image of Gagal memuat QRIS]';">
                     <p class="text-slate-400 text-sm mt-2 mb-3">Klik pada area ini atau tombol di bawah untuk mengunduh kode QRIS.</p>
                     <button onclick="event.stopPropagation(); downloadQris()" class="download-button bg-lime-500 hover:bg-lime-600 text-white font-medium py-2 px-4 rounded-lg text-sm flex items-center self-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download mr-2" viewBox="0 0 16 16">
@@ -189,6 +189,16 @@
             <div class="payment-card bg-slate-700/70 p-5 sm:p-6 rounded-lg shadow-lg">
                  <div class="flex items-center justify-between">
                     <h2 class="text-xl sm:text-2xl font-semibold text-slate-500">Bank</h2>
+                    <span class="status-badge status-tidak-ada">Tidak Ada</span>
+                </div>
+                <p class="text-slate-400 text-lg sm:text-xl mt-1">Saat ini tidak tersedia</p>
+            </div>
+        </div>
+
+            <!-- OVO -->
+            <div class="payment-card bg-slate-700/70 p-5 sm:p-6 rounded-lg shadow-lg">
+                 <div class="flex items-center justify-between">
+                    <h2 class="text-xl sm:text-2xl font-semibold text-slate-500">OVO</h2>
                     <span class="status-badge status-tidak-ada">Tidak Ada</span>
                 </div>
                 <p class="text-slate-400 text-lg sm:text-xl mt-1">Saat ini tidak tersedia</p>
@@ -211,7 +221,7 @@
                         Ke mana saya harus mengirim bukti pembayaran?
                     </summary>
                     <p class="text-slate-300 mt-3 text-sm sm:text-base">
-                        Silakan kirim bukti pembayaran Anda ke WhatsApp 081297662535.
+                        Silakan kirim bukti pembayaran Anda ke WhatsApp 085266948645.
                     </p>
                 </details>
                 <details class="faq-item bg-slate-700/70 p-4 sm:p-5 rounded-lg shadow-lg">
@@ -234,7 +244,7 @@
         </section>
 
         <footer class="text-center mt-10 sm:mt-12 text-slate-500 text-xs sm:text-sm">
-            <p>&copy; <span id="currentYear"></span> XenzMarket. Hak Cipta Dilindungi.</p>
+            <p>&copy; <span id="currentYear"></span> Asepszip. Hak Cipta Dilindungi.</p>
         </footer>
     </div>
 
@@ -244,7 +254,7 @@
             <p class="text-slate-300 mb-6 text-sm sm:text-base">
                 Nomor pembayaran telah disalin. Setelah melakukan transfer, mohon segera kirimkan bukti pembayaran Anda ke:
             </p>
-            <p class="text-lg font-semibold text-amber-400 mb-6">WhatsApp 081297662535</p>
+            <p class="text-lg font-semibold text-amber-400 mb-6">WhatsApp 085266948645</p>
             <button id="closeModalButton" class="modal-close-button bg-rose-500 hover:bg-rose-600 text-white font-medium py-2 px-6 rounded-lg text-sm">Tutup</button>
         </div>
     </div>
